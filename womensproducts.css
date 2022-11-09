@@ -1,0 +1,139 @@
+.nav{
+    width: 100%;
+    margin: auto;
+}
+.navtop{
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+.navleft{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.navright{
+    width: 37%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.navleft>p{
+    font-family: Futura-Medium, "Century Gothic", "Gill Sans", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    justify-content: space-between;
+}
+.navleft>p:nth-child(1){
+    background-color: rgb(242, 242, 242);
+    padding: 11px;
+    margin-top: 0px;
+}
+.navright>p{
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    justify-content: space-between;
+   
+}
+.navmid{
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    
+    margin: auto;
+}
+.blank{
+    
+    width: 40%;
+}
+.cartlogo{
+    display: flex;
+    justify-content: space-between;
+    font-family: Futura-Medium, "Century Gothic", "Gill Sans", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    height: 30px;
+    align-self: center;
+    
+}
+.cartlogo>div:nth-child(3){
+    text-align: end;
+    width: 20%;
+}
+.navbot{
+    width: 75%;
+    height: 50px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    font-family: Futura-Medium, "Century Gothic", "Gill Sans", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    
+}
+.navbot>div{
+    display: flex;
+    
+}
+.navbot>div>p{
+    padding: 10px;
+}
+hr{
+    margin-top: 10px;
+    color: rgb(160, 160, 160);
+}
+input{
+    width: 250px;
+    height: 25px;
+    align-self: center;
+}
+
+.middle{
+    width: 75%;
+    margin: auto;
+   
+}
+.middletop{
+    display: flex;
+    justify-content: space-around;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(117, 117, 117);
+}
+select{
+    width: auto;
+    border: 0px;
+}
+.category{
+    width: 20%;
+   
+}
+.main{
+    display: flex;
+}
+.container{
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    line-height: 10px;
+    
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+
+}
+.container>div>img{
+    width: 100%;
+    
+}

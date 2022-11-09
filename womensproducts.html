@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="womensproducts.css">
+</head>
+<body>
+    <!-- top part -->
+    <div class="nav"> 
+        <div class="navtop">
+            <div class="navleft">
+                <p>WOMEN</p><p><a href="mensproduct.html">MEN</a> </p> <p>KIDS</p><p>LIFE</p>
+            </div>
+            <div class="navright" >
+                <p>Signup for Newsletter</p> <p>My account</p><p>My wishlist ☆</p> <p>India | English</p>
+            </div>
+        </div>
+        
+        <div class="navmid">
+            <div class="blank"></div>
+            <div class="logo">
+                <img width="60%" src="https://i.postimg.cc/Vkxvkn09/finallogomy.jpg" alt="">
+            </div>
+            <div class="cartlogo" >
+            <div> SHOPPING BAG  :</div>  
+            <div id="quantity">0</div>
+            <div><img width="100%" src="https://i.postimg.cc/3rDNRbrV/bag.jpg" alt=""></div>
+            
+            </div>
+        </div>
+        <div class="navbot">
+            <div><p>NEW ARRIVALS</p><p>DESIGNERS</p> <p>CLOTHING</p><p>SHOES</p><p>BAGS</p><p>ACCESSORIES</p><p>FESTIVE SEASON</p><p>SALE</p></div>
+            <div><input onchange="serachwomen()" id="searchw" placeholder="Search for...                                         🔍" type="text"></div>
+            
+        </div>
+    </div>
+    <hr>
+    
+
+
+    <!-- mid part -->
+    <div class="middle">
+        <div class="middletop">
+            <p>219 Products</p>
+            <select onchange="Sortbyw()"  name="Sorting" id="Sortb">
+                <option value="Sort By">Sort By</option>
+                <option value="Price Low to High">Price Low to High</option>
+                <option value="Price High to Low">Price High to Low</option>
+                <option value="New items">New items</option>
+            </select>
+        </div>
+        
+        <hr>
+        <div class="main">
+            <div class="category">
+                <p>
+                    NEW ARRIVALS <br>
+                    Current Week<br>
+                    Previous Weeks<br>
+                    Essentials<br>
+                    Tailoring Edit<br>
+                    Loungewear<br>
+                    Outdoor & Activewear<br>
+                    Cold Weather Edit<br>
+                    The Ski Edit</p>
+                <hr>
+                <p>Category</p>
+                <hr>
+                <p>Designer</p>
+                <hr>
+                <p>Size</p>
+                <hr>
+                <p>Color</p>
+                <hr>
+                <p>Patterns</p>
+                <hr>
+            </div>
+            <div class="container"></div>
+        </div>
+
+    </div>
+
+
+    <!-- bottom part -->
+    <div class="bottom">
+        <hr>
+        <p>SHOP WHENEVER, WHEREVER WITH THE APP</p>
+        <img src="https://www.bbassets.com/monsters-inc/static/images/app_store.86a85d57.png" alt="">
+        <img src="https://www.bbassets.com/monsters-inc/static/images/play_store.f6f3c9c0.png" alt="">
+        <hr>
+
+    </div>
+
+</body>
+
+</html>
+
+<script src="womensproduct.js"></script>
