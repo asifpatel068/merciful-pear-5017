@@ -360,12 +360,13 @@ let productsObject =
 
 
 
-let products = JSON.parse(localStorage.getItem("shoppingItems")) || []
 
-let cart_Items = []
+let cart_Items =JSON.parse(localStorage.getItem("cartdata")) || []
+let count =Number(localStorage.getItem("Count") )|| 0;
 
 
 displayItem(productsObject);
+document.querySelector("#quantity").textContent="SHOPPING BAG :"+count;
 
 let cart_count = 0
 
@@ -415,30 +416,41 @@ document.querySelector(".container").textContent=""
    
         let brand = document.createElement("p")
         brand.textContent = ele.brand
-        brand.setAttribute("class","brand")
+        brand.setAttribute("class","brandFont")
 
         let name = document.createElement("p")
         name.textContent = ele.name
         name.setAttribute("class","nameFont")
     
-        let price_button_div = document.createElement("div")
-    
+        
+        let button_div = document.createElement("div")
+        button_div.setAttribute("class","butdiv")
         let price = document.createElement("h5")
         price.textContent= "€"+" "+ ele.price
         price.setAttribute("class","price")
         
         let button = document.createElement("button")
-        button.textContent="Add Cart"
+        button.textContent="Add Cart";
+        button.setAttribute("class","add")
         button.addEventListener("click", function(){
-            cart_count = cart_count+1
-            document.querySelector("#quantity").textContent=cart_count
-            addToCart(ele)
+            count++;
+            localStorage.setItem("Count",count)
+            document.querySelector("#quantity").textContent="SHOPPING BAG :"+count;
+
+            cart_Items.push(ele)
+            localStorage.setItem("cartdata",JSON.stringify(cart_Items));
+            alert("Product Added to Cart")
+            
         })
     
-        price_button_div.append(price,button)
+        let button1 = document.createElement("button")
+        button1.textContent="☆";
+        button1.setAttribute("class","wish")
+
+        button_div.append(button,button1)
         
     
-        div.append(image,brand,name,price_button_div)
+        div.append(image,brand,name,price,button_div)
         document.querySelector(".container").append(div)
     }
     })

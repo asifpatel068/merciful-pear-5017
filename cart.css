@@ -1,0 +1,209 @@
+.nav{
+    width: 100%;
+    margin: auto;
+}
+.navtop{
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+.navleft{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.navright{
+    width: 37%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.navleft>p{
+    font-family: Futura-Medium, "Century Gothic", "Gill Sans", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navright>p{
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    justify-content: space-between;
+   
+}
+.navmid{
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    
+    margin: auto;
+}
+.blank{
+    
+    width: 15%;
+}
+
+.navbot{
+    width: 75%;
+    height: 50px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    font-family: Futura-Medium, "Century Gothic", "Gill Sans", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    
+}
+.navbot>div{
+    display: flex;
+    
+}
+.navbot>div>p{
+    padding: 10px;
+}
+hr{
+    margin-top: 10px;
+    color: rgb(160, 160, 160);
+}
+input{
+    width: 250px;
+    height: 25px;
+    align-self: center;
+}
+
+.middle{
+    width: 75%;
+    margin: auto;
+   
+}
+.middletop{
+    display: block;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(117, 117, 117);
+}
+.middletop>div:nth-child(2){
+    display: flex;
+    justify-content: flex-end;
+}
+.middletop>div:nth-child(2)>button,.pc{
+    color: white;
+    background-color: rgb(0, 0, 0);
+    padding: 5px 15px 5px 15px;
+    font-family: Futura-Medium, "Century Gothic", "Gill Sans", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+
+}
+.cs{
+    color: black;
+    background-color: rgb(223, 223, 223);
+    padding: 8px 20px 8px 20px;
+    border: 0px solid ;
+    font-family: Futura-Medium, "Century Gothic", "Gill Sans", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+
+}
+.cs:hover{
+    background-color: rgb(203, 203, 203);
+    
+}
+.middletop>div:nth-child(3){
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.container{
+    
+}
+.container>div{
+    display: flex;
+    justify-content: space-between;
+
+
+}
+.container>div>div{
+    width: 30%;
+   display: flex;
+   justify-content: space-around;
+  
+   
+}
+.container>div>div>div:nth-child(1){
+    width: 35%;
+   
+}
+.container>div>div>div:nth-child(2){
+    width:auto;
+    margin-left: 10px;
+    
+}
+.container>div>div>div>img{
+    width: 100%;
+}
+h3{
+    font: 1.35em sans-serif;
+}
+.divButton{
+    display: flex;
+}
+.divButton>button{
+    font-size: 15px;
+    color: grey;
+    border: 0px solid gray;
+    background-color: white;display: flex;
+}
+
+.middletop>div:nth-child(3)>div{
+    display: flex;
+    justify-content: space-around;
+    width: 28%;
+}
+.middletop>div:nth-child(3)>div>p{
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+}
+.down{
+    width: 75%;
+    margin: auto;
+}
+.down2{
+    display: flex;
+    justify-content: space-between;
+}
+.down2>div:nth-child(2){
+    text-align: end;
+}
+.down>div:nth-child(5){
+    display: flex;
+    justify-content: space-between;
+}
+
+.brandFont{
+    font-family: Futura-Medium, "Century Gothic", "Gill Sans", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    
+}
+.nameFont{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: grey;
+   
+}

@@ -48,27 +48,37 @@
 .navmid{
     width: 75%;
     display: flex;
-    justify-content: center;
-    
+    justify-content: space-between;
     margin: auto;
 }
 .blank{
     
-    width: 40%;
+    width: 30%;
 }
-.cartlogo{
+.cartlogo>a{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     font-family: Futura-Medium, "Century Gothic", "Gill Sans", Helvetica, Arial, sans-serif;
     font-size: 14px;
     font-weight: 400;
-    height: 30px;
-    align-self: center;
+    height: 45px;
+    
     
 }
-.cartlogo>div:nth-child(3){
+.cartlogo{
+    align-self: flex-end;
+    width: 175px;
+    
+}
+.cartlogo>a>div:nth-child(2){
     text-align: end;
     width: 20%;
+    
+    
+}
+.cartlogo>a>div:nth-child(1){
+    align-self: center;
+    
 }
 .navbot{
     width: 75%;
@@ -122,12 +132,18 @@ select{
 .main{
     display: flex;
 }
+.category>p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    color: rgb(94, 93, 93);
+}
 .container{
     width: 75%;
     margin: auto;
     text-align: center;
-    line-height: 10px;
-    
+    line-height: normal;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 10px;
@@ -136,4 +152,62 @@ select{
 .container>div>img{
     width: 100%;
     
+}
+
+.butdiv{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    
+    margin: auto;
+}
+.brandFont{
+    font-family: Futura-Medium, "Century Gothic", "Gill Sans", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    
+}
+.nameFont{
+    font-family: "Roboto Mono", Menlo, "Courier New", monospace;
+    font-size: 14px;
+    font-weight: 400;
+   
+}
+.price{
+    font-family: "Roboto Mono", Menlo, "Courier New", monospace;
+    font-size: 14px;
+    font-weight: 1000;
+    
+}
+.add{
+    border: 1px solid gray;
+    background-color: white;
+    
+}
+.wish{
+    font-size: larger;
+    border: 0px solid gray;
+    background-color: white;
+    
+}
+
+.add:hover,.wish:hover{
+    border: 1px solid gray;
+    color: white;
+    padding: 5px 10px 5px 10px;
+    background-color: gray;
+    
+}
+.bottom{
+    width: 75%;
+    margin: auto;
+}
+.bottom>div:nth-child(2){
+    
+    text-align: center;
+}
+.bottom>div:nth-child(4){
+   
+    display: flex;
+    justify-content: space-between;
 }
