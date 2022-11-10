@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <!-- navbar -->
+    <div class="nav"> 
+        <div class="navtop">
+            <div class="navleft">
+                <p> <a href="womensproducts.html">WOMEN</a> </p> <p> <a href="mensproduct.html">MEN</a></p> <p>KIDS</p><p>LIFE</p>
+            </div>
+            <div class="navright" >
+                <p>Signup for Newsletter</p> <p>My account</p><p>My wishlist ☆</p> <p>India | English</p>
+            </div>
+        </div>
+        <div class="navmid">
+            <div class="blank"></div>
+            <div class="logo">
+                <img width="60%" src="https://i.postimg.cc/Vkxvkn09/finallogomy.jpg" alt="">
+            </div>
+        </div>
+        <div class="navbot">
+            <div><p>NEW ARRIVALS</p><p>DESIGNERS</p> <p>CLOTHING</p><p>SHOES</p><p>BAGS</p><p>ACCESSORIES</p><p>FESTIVE SEASON</p><p>SALE</p></div>
+            <div><input onchange="serachmen()" id="searchm"  placeholder="Search for...                                         🔍" type="text"></div>
+            
+        </div>
+    </div>
+    <hr>
+
+<!-- middlepart -->
+
+
+    <!-- mid part -->
+    <div class="middle">
+        <div class="middletop">
+            <div> <h3>YOUR SHOPPING BAG</h3> </div>
+            <div><button>PROCEED TO CHECKOUT</button></div>
+            <div>
+                <div>
+               <p>Price</p> <p>Quantity</p>	 <p>Subtotal</p>	</div>
+                </div>
+            </div>
+            
+            
+            <hr>
+            <div class="container"></div>
+        </div>
+
+
+        <div class="down"> 
+    <div>
+        <p>YOUR CURRENT PROMOTIONS</p> 
+            <p>Free shipping</p> 
+    </div>
+    <hr>
+    <div class="down2">
+        <div>
+        <input placeholder="Gift Card/Store Credit/Promo Code" type="text" name="promo" id="disc">
+        <button class="cs">USE CODE</button>
+        </div>
+        <div>
+            <p id="stotal">Sub total 0</p>
+          <b><p id="total">Grand total 0</p></b>  
+            <p>VAT exception. VAT not included. Shipping not included.</p>
+        </div>
+    </div>
+    <br>
+    <div>
+        <a href="mensproduct.html">  <button class="cs">CONTINUE SHOPPING</button></a>
+        <button class="pc">PROCEED TO CHECKOUT</button>
+    </div> 
+    <br>
+    <hr>
+</div>
+    </div>
+  
+<!-- bottom part -->
+
+
+</body>
+</html>
+
+<script>
+    
+let cart_Items =JSON.parse(localStorage.getItem("cartdata")) || []
+let count =Number(localStorage.getItem("Count") )|| 0;
+
+let total=localStorage.getItem("total")|| 0;
+
+
+displayItem(cart_Items);
+// displayItem(products)
+
+
+
+function displayItem(data){
+    total=0;
+    count=1;
+document.querySelector(".container").textContent=""
+
+    data.map(function (ele,i){
+
+        let divx = document.createElement("div");
+
+        let div1 = document.createElement("div");
+        let image = document.createElement("img")
+        image.setAttribute("src",ele.image)
+     
+        let brand = document.createElement("p")
+        brand.textContent = ele.brand
+        brand.setAttribute("class","brandFont")
+
+        let name = document.createElement("p")
+        name.textContent = ele.name
+        name.setAttribute("class","nameFont")
+    
+        let price = document.createElement("p")
+        price.textContent= "€"+" "+ ele.price
+        price.setAttribute("class","price")
+        
+        total+=Number(ele.price);
+        localStorage.setItem("total",total)
+        document.querySelector("#stotal").innerText="Sub Total -€"+total
+        document.querySelector("#total").innerText="Grand Total -€"+total
+        console.log(ele.price)
+
+
+        let button = document.createElement("button")
+        button.textContent="X Remove"
+        button.addEventListener("click", function(){
+            count--;
+            localStorage.setItem("Count",count)
+           
+            removItem(ele,i)
+        
+        })
+        let button1 = document.createElement("button")
+        button1.textContent="♡ Add to wishlist"
+        
+        let divButton = document.createElement("div");
+        divButton.setAttribute("class","divButton")
+
+        let hr = document.createElement("hr");
+
+        let div2 = document.createElement("div");
+        let quantity = document.createElement("p");
+        quantity.textContent=1
+
+        let price2 = document.createElement("p")
+        price2.textContent= "€"+" "+quantity.textContent*Number(ele.price);
+
+        let  divy = document.createElement("div");
+
+        div1.append(image)
+        divButton.append(button,button1)
+        div2.append(brand,name,divButton)
+    
+        divx.append(div1,div2)
+        divy.append(price,quantity,price2)
+
+        let  divU = document.createElement("div");
+
+        divU.append(divx,divy)
+        document.querySelector(".container").append(divU,hr)
+    
+    })
+
+
+}
+function removItem(ele,i){
+        cart_Items.splice(i,1)
+        displayItem(cart_Items)
+        localStorage.setItem("cartdata",JSON.stringify(cart_Items))
+}
+
+</script>
