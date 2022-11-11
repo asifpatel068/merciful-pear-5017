@@ -196,11 +196,19 @@ select{
     color: white;
     padding: 5px 10px 5px 10px;
     background-color: gray;
-    
+    cursor: pointer;
 }
 .bottom{
     width: 75%;
     margin: auto;
+}
+.bottom p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    
+    color: gray;
 }
 .bottom>div:nth-child(2){
     
@@ -210,4 +218,34 @@ select{
    
     display: flex;
     justify-content: space-between;
+}
+.middle>p{
+    text-align: center;
+    font-family: Futura-Medium, "Century Gothic", "Gill Sans", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    
+}
+h3{
+    font: 1em  sans-serif;
+    font-family: Futura-Medium, "Century Gothic", "Gill Sans", Helvetica, Arial, sans-serif;
+}
+.botmost>div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cs{
+    color: black;
+    background-color: rgb(223, 223, 223);
+    padding: 8px 20px 8px 20px;
+    border: 0px solid ;
+    font-family: Futura-Medium, "Century Gothic", "Gill Sans", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+
+}
+.cs:hover{
+    background-color: rgb(203, 203, 203);
+    cursor: pointer;
 }

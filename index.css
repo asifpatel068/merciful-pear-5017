@@ -1,7 +1,11 @@
+p{
+    font-family: Futura-Medium, "Century Gothic", "Gill Sans", Helvetica, Arial, sans-serif;
+    font-weight: auto;
+}
 .nav{
     width: 100%;
     margin: auto;
-    
+   
 }
 .navtop{
     width: 75%;
@@ -91,11 +95,12 @@
     font-family: Futura-Medium, "Century Gothic", "Gill Sans", Helvetica, Arial, sans-serif;
     font-size: 13px;
     font-weight: 400;
+ 
     
 }
 .navbot>div{
     display: flex;
-    
+   
 }
 .navbot>div>p{
     padding: 10px;
@@ -113,93 +118,127 @@ input{
 .middle{
     width: 75%;
     margin: auto;
-   
-}
-.middletop{
-    display: flex;
-    justify-content: space-around;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
-    font-weight: 400;
-    color: rgb(117, 117, 117);
-}
-select{
-    width: auto;
-    border: 0px;
-}
-.category{
-    width: 20%;
-   
-}
-.main{
-    display: flex;
-}
-.category>p{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 30px;
-    color: rgb(94, 93, 93);
 }
 
-.container{
-    width: 75%;
-    margin: auto;
-    text-align: center;
-    line-height: normal;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 10px;
-
-}
-.container>div>img{
-    width: 100%;
+.midTop>div:nth-child(2){
     
+    color: white;
+    position: relative;
+    bottom: 385px; left: 40px;
 }
-.butdiv{
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-    
-    margin: auto;
-}
-.brandFont{
+.midTop>div:nth-child(2)>p:nth-child(3){
+    font-size: 54px;
     font-family: Futura-Medium, "Century Gothic", "Gill Sans", Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    
+    font-weight: 500;
+    line-height: 65px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
-.nameFont{
-    font-family: "Roboto Mono", Menlo, "Courier New", monospace;
-    font-size: 14px;
-    font-weight: 400;
-   
-}
-.price{
-    font-family: "Roboto Mono", Menlo, "Courier New", monospace;
-    font-size: 14px;
-    font-weight: 1000;
-    
-}
-.add{
-    border: 1px solid gray;
-    background-color: white;
-    
-}
-.wish{
-    font-size: larger;
+.shop{
     border: 0px solid gray;
     background-color: white;
-    
+    padding: 8px 17px 8px 17px;
+    font-size: 13px;
+    font-family: Futura-Medium, "Century Gothic", "Gill Sans", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+
+}
+.shop:hover{
+    border: 0px solid gray;
+    background-color: rgb(152, 152, 152);
+   color: white;
+   cursor: pointer;
 }
 
-.add:hover,.wish:hover{
-    border: 1px solid gray;
+.midBox{
+    margin-top: -220px;
+    text-align: center;
+}
+.midBox>p{
+    font-size: 32px;
+    font-family: Futura-Medium, "Century Gothic", "Gill Sans", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    line-height: 41.6px;
+    margin-bottom: 0px;
+    
+}
+.midBox>div{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+.midBox>div>div>div{
+    display: flex;
+    justify-content: space-around;
+    color: gray;
+    font-size: small;
+}
+.midBox2{
+    text-align: center;
+}
+.midBox2>div{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    
+}
+.midBox2>div>div>div{
+    display: flex;
+    justify-content: space-around;
+    color: gray;
+    font-size: larger;
+
+}
+
+
+.view{
+    background-color: black;
     color: white;
-    padding: 5px 10px 5px 10px;
-    background-color: gray;
+    padding: 5px 20px 5px 20px;
+    font-size: 13px;
+    font-family: Futura-Medium, "Century Gothic", "Gill Sans", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+}
+.view:hover{
+    background-color: rgb(61, 61, 61);
+    border: 0px solid gray;
+    padding: 8px 25px 8px 25px;
+    color: white;
     cursor: pointer;
 }
+
+
+
+.midmid,.midmid2{
+    margin-top: 30px;
+   
+}
+.midmid>div>div:nth-child(1)>div>p:nth-child(1),.midmid2>div>div:nth-child(2)>div>p:nth-child(1){
+    font-size: 54px;
+    font-family: Futura-Medium, "Century Gothic", "Gill Sans", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    line-height: 70px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.midmid>div>div:nth-child(1)>div,.midmid2>div>div:nth-child(2)>div{
+
+     width: 75%;
+     margin: auto;
+     align-self: center;
+}
+
+
+.midmid>div,.midmid2>div{
+    display: flex;
+}
+.midmid>div>div,.midmid2>div>div{
+    width: 50%;
+    color: white;
+    background-color: black;
+   display: flex;
+}
+
 .bottom{
     width: 75%;
     margin: auto;
@@ -212,7 +251,7 @@ select{
     
     color: gray;
 }
-.bottom>div:nth-child(2){
+.bottom>div:nth-child(2),.middle>p{
     
     text-align: center;
 }
@@ -221,12 +260,29 @@ select{
     display: flex;
     justify-content: space-between;
 }
-.middle>p{
-    text-align: center;
-    font-family: Futura-Medium, "Century Gothic", "Gill Sans", Helvetica, Arial, sans-serif;
-    font-size: 14px;
+.midBottom{
+    width: 90%;
+    margin:auto ;
+}
+.midBottom p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
     font-weight: 400;
+    line-height: 16px;
     
+}
+.midBottom>h3{
+    text-align: center;
+}
+.midBottom>div{
+    
+    display: flex;
+    justify-content: space-between;
+    
+}
+.midBottom>div>div{
+    width: 50%;
+    text-align: left;
 }
 h3{
     font: 1em  sans-serif;
@@ -251,5 +307,3 @@ h3{
     background-color: rgb(203, 203, 203);
     cursor: pointer;
 }
-
-
