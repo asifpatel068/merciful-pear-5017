@@ -105,7 +105,7 @@ input{
     font-family: Futura-Medium, "Century Gothic", "Gill Sans", Helvetica, Arial, sans-serif;
     font-size: 12px;
     font-weight: 400;
-
+    cursor: pointer;
 }
 .cs{
     color: black;
@@ -119,7 +119,7 @@ input{
 }
 .cs:hover{
     background-color: rgb(203, 203, 203);
-    
+    cursor: pointer;
 }
 .middletop>div:nth-child(3){
     display: flex;
@@ -166,6 +166,7 @@ h3{
     color: grey;
     border: 0px solid gray;
     background-color: white;display: flex;
+    cursor: pointer;
 }
 
 .middletop>div:nth-child(3)>div{
