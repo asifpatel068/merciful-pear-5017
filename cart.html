@@ -15,7 +15,7 @@
                 <p> <a href="womensproducts.html">WOMEN</a> </p> <p> <a href="mensproduct.html">MEN</a></p> <p>KIDS</p><p>LIFE</p>
             </div>
             <div class="navright" >
-                <p>Signup for Newsletter</p> <p>My account</p><p>My wishlist ☆</p> <p>India | English</p>
+                <p>Signup for Newsletter</p> <p><a href="signIn.html">My account</a></p><p>My wishlist ☆</p> <p>India | English</p>
             </div>
         </div>
         <div class="navmid">
@@ -39,7 +39,7 @@
     <div class="middle">
         <div class="middletop">
             <div> <h3>YOUR SHOPPING BAG</h3> </div>
-            <div><button>PROCEED TO CHECKOUT</button></div>
+            <div> <a href="checkout.html"><button class="pc">PROCEED TO CHECKOUT</button></a> </div>
             <div>
                 <div>
                <p>Price</p> <p>Quantity</p>	 <p>Subtotal</p>	</div>
@@ -71,8 +71,8 @@
     </div>
     <br>
     <div>
-        <a href="mensproduct.html">  <button class="cs">CONTINUE SHOPPING</button></a>
-        <button class="pc">PROCEED TO CHECKOUT</button>
+        <a href="index.html">  <button class="cs">CONTINUE SHOPPING</button></a>
+       <a href="checkout.html"><button class="pc">PROCEED TO CHECKOUT</button></a> 
     </div> 
     <br>
     <hr>
@@ -81,101 +81,42 @@
   
 <!-- bottom part -->
 
+<div class="bottom">  
+    
+    <p>You can also place your order via telephone.</p>
+    <div >
+        <div>
+          <h3> CALL US </h3>
+            <p>+49 89 127695-101</p> 
+          <p>Argentina: 0800-666-0663</p>  
+          <p>Chile: 800-914-515</p> 
+          <p>Colombia: 01800-518-5268</p> 
+          <p>Mexico: 01-800-099-0703</p>  
+          <p>Peru: 0800-78259</p> 
+          <p>Puerto Rico: 1-787-303-4205</p> 
+          <p>Available 24/7</p> 
+        </div>
+        <div>
+          <h3>MAIL US</h3>
+            <p>customercare@mytheresa.com</p> 
+          
+        </div>
+       
+    </div>
+
+  </div>
+    <div class="botmost">
+      <hr>
+      <div>
+          <p>copyright © 2006-2022 mytheresa.com</p>
+          <p>terms of use   privacy policy  imprint</p>
+      </div>
+  </div>
+</body>
 
 </body>
 </html>
 
-<script>
-    
-let cart_Items =JSON.parse(localStorage.getItem("cartdata")) || []
-let count =Number(localStorage.getItem("Count") )|| 0;
-
-let total=localStorage.getItem("total")|| 0;
-
-
-displayItem(cart_Items);
-// displayItem(products)
-
-
-
-function displayItem(data){
-    total=0;
-    count=1;
-document.querySelector(".container").textContent=""
-
-    data.map(function (ele,i){
-
-        let divx = document.createElement("div");
-
-        let div1 = document.createElement("div");
-        let image = document.createElement("img")
-        image.setAttribute("src",ele.image)
-     
-        let brand = document.createElement("p")
-        brand.textContent = ele.brand
-        brand.setAttribute("class","brandFont")
-
-        let name = document.createElement("p")
-        name.textContent = ele.name
-        name.setAttribute("class","nameFont")
-    
-        let price = document.createElement("p")
-        price.textContent= "€"+" "+ ele.price
-        price.setAttribute("class","price")
-        
-        total+=Number(ele.price);
-        localStorage.setItem("total",total)
-        document.querySelector("#stotal").innerText="Sub Total -€"+total
-        document.querySelector("#total").innerText="Grand Total -€"+total
-        console.log(ele.price)
-
-
-        let button = document.createElement("button")
-        button.textContent="X Remove"
-        button.addEventListener("click", function(){
-            count--;
-            localStorage.setItem("Count",count)
-           
-            removItem(ele,i)
-        
-        })
-        let button1 = document.createElement("button")
-        button1.textContent="♡ Add to wishlist"
-        
-        let divButton = document.createElement("div");
-        divButton.setAttribute("class","divButton")
-
-        let hr = document.createElement("hr");
-
-        let div2 = document.createElement("div");
-        let quantity = document.createElement("p");
-        quantity.textContent=1
-
-        let price2 = document.createElement("p")
-        price2.textContent= "€"+" "+quantity.textContent*Number(ele.price);
-
-        let  divy = document.createElement("div");
-
-        div1.append(image)
-        divButton.append(button,button1)
-        div2.append(brand,name,divButton)
-    
-        divx.append(div1,div2)
-        divy.append(price,quantity,price2)
-
-        let  divU = document.createElement("div");
-
-        divU.append(divx,divy)
-        document.querySelector(".container").append(divU,hr)
-    
-    })
-
-
-}
-function removItem(ele,i){
-        cart_Items.splice(i,1)
-        displayItem(cart_Items)
-        localStorage.setItem("cartdata",JSON.stringify(cart_Items))
-}
-
+<script src="cart.js">
+   
 </script>
