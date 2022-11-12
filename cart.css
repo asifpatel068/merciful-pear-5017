@@ -208,3 +208,50 @@ h3{
     color: grey;
    
 }
+.butdiv{
+    margin-top: 50px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.bottom{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+.bottom>div{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+   margin: auto;
+}
+.bottom>div>div{
+    border: 0.1px solid rgba(174, 174, 174, 0.484);
+    width: 49%;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    color: gray;
+}
+h3{
+    font: 1em  sans-serif;
+    font-family: Futura-Medium, "Century Gothic", "Gill Sans", Helvetica, Arial, sans-serif;
+}
+#c1{
+    width: 15px;
+   
+}
+.method>div{
+    display: flex;
+    justify-content: space-around;
+}
+.botmost>div{
+width: 80%;
+margin: auto;
+    display: flex;
+    justify-content: space-between;
+}

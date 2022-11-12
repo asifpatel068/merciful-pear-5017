@@ -454,18 +454,19 @@ document.querySelector(".container").textContent=""
     })
 
 
-    let count=1
-    setInterval(myTimer, 3000);
-    
-    function myTimer() {
-     if(count%2==0){
-        document.querySelector(".middle>p").innerHTML = "";
-        document.querySelector(".middle>p").innerHTML = "Mytheresa Men. Become a member now";
-     }
-     else{
-        document.querySelector(".middle>p").innerHTML = "";
-        document.querySelector(".middle>p").innerHTML = "Be the first to know";
-     }
-    count++
-    }
+}
+
+let count1=1
+setInterval(myTimer, 3000);
+
+function myTimer() {
+ if(count1%2==0){
+    document.querySelector(".middle>p").innerHTML = "";
+    document.querySelector(".middle>p").innerHTML = "Mytheresa Men. Become a member now";
+ }
+ else{
+    document.querySelector(".middle>p").innerHTML = "";
+    document.querySelector(".middle>p").innerHTML = "Be the first to know";
+ }
+count1++
 }

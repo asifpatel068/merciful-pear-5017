@@ -455,19 +455,20 @@ document.querySelector(".container").textContent=""
     }
     })
 
+}
 
-    let count=0
-    setInterval(myTimer, 3000);
-    
-    function myTimer() {
-     if(count%2==0){
-        document.querySelector(".middle>p").innerHTML = "";
-        document.querySelector(".middle>p").innerHTML = "Free shipping on orders over 800€";
-     }
-     else{
-        document.querySelector(".middle>p").innerHTML = "";
-        document.querySelector(".middle>p").innerHTML = "Free returns within 30 days";
-     }
-    count++
-    }
+
+let count1=0
+setInterval(myTimer, 3000);
+
+function myTimer() {
+ if(count1%2==0){
+    document.querySelector(".middle>p").innerHTML = "";
+    document.querySelector(".middle>p").innerHTML = "Free shipping on orders over 800€";
+ }
+ else{
+    document.querySelector(".middle>p").innerHTML = "";
+    document.querySelector(".middle>p").innerHTML = "Free returns within 30 days";
+ }
+count1++
 }
