@@ -51,7 +51,7 @@
       height:35px;
     }
 
-    .logo{
+    .logo>a{
        
         display: flex;
         justify-content: center;
@@ -140,6 +140,14 @@
         line-height: 14px;
         color: gray;
     }
+
+    .botmost>div{
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
     h3{
         font: 1em  sans-serif;
         font-family: Futura-Medium, "Century Gothic", "Gill Sans", Helvetica, Arial, sans-serif;
@@ -152,9 +160,4 @@
         display: flex;
         justify-content: space-around;
     }
-    .botmost>div{
-    width: 80%;
-    margin: auto;
-        display: flex;
-        justify-content: space-between;
-    }
+    
