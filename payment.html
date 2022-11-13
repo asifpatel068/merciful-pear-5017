@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .navbot{
+        width: 75%;
+        height: 50px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        font-family: Futura-Medium, "Century Gothic", "Gill Sans", Helvetica, Arial, sans-serif;
+        font-size: 13px;
+        font-weight: 400;
+    
+        
+    }
+    .navbot>div{
+        display: flex;
+      
+    }
+   
+    .mid{
+      width: 80%;
+      margin: auto;
+      display: flex;
+      margin-top: 50px;
+    }
+   
+    
+   
+    hr{
+        margin-top: 10px;
+        color: rgb(160, 160, 160);
+    }
+
+    .name{
+      border: 1px solid rgba(203, 203, 203, 0.614);
+      border-radius: 2px;
+      width: 500px;
+      padding: 7px;
+      margin-top: 15px;
+      margin-right: 120px;
+      padding: 10px;
+    }
+   
+    .dob{
+      border: 1px solid rgba(203, 203, 203, 0.614);
+      border-radius: 2px;
+      width: 500px;
+      padding: 7px;
+      margin-top: 15px;
+      margin-right: 120px;
+      padding: 10px;
+    }
+   
+
+    .select{
+      width:70px;
+      height:35px;
+    }
+
+    .logo>a{
+       
+        display: flex;
+        justify-content: center;
+    }
+   
+    .navbot>div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: 150px;
+        height: 80px;
+        
+    }
+    .navbot>div:nth-child(1)>div,.navbot>div:nth-child(2)>div,.navbot>div:nth-child(3)>div{
+        width: 12px;
+        height: 12px;
+        align-self: center;
+        background-color: rgb(117, 117, 117);
+    }
+    .navbot>div:nth-child(4)>div{
+        width: 12px;
+        height: 12px;
+        align-self: center;
+        background-color: rgb(0, 0, 0);
+    }
+    .navbot>div>div{
+        width: 12px;
+        height: 12px;
+        align-self: center;
+        background-color: rgba(236, 236, 236, 0.905);
+    }
+    h3{
+        font: 1em  sans-serif;
+        font-family: Futura-Medium, "Century Gothic", "Gill Sans", Helvetica, Arial, sans-serif;
+    }
+    
+button{
+    color: black;
+    background-color: rgb(223, 223, 223);
+    padding: 8px 25px 8px 25px;
+    border: 0px solid ;
+    font-family: Futura-Medium, "Century Gothic", "Gill Sans", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    
+}
+button:hover{
+    color: white;
+    background-color: rgb(1, 1, 1);
+    cursor: pointer;
+}
+
+
+    .bottom{
+        text-align: center;
+        width: 80%;
+        margin: auto;
+    }
+    .bottom>div{
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+       margin: auto;
+    }
+    .bottom>div>div{
+        border: 0.1px solid rgba(174, 174, 174, 0.484);
+        width: 49%;
+    }
+    p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 14px;
+        color: gray;
+    }
+
+    .botmost>div{
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    .butdiv{
+      width: 80%;
+      margin: auto;
+    }
+    </style>
+</head>
+<body>
+
+  <!-- top part -->
+  <div class="nav"> 
+      
+    <div class="logo">
+     <a href="index.html">  <img width="25%" src="https://i.postimg.cc/Vkxvkn09/finallogomy.jpg" alt=""></a> 
+    </div>
+    <div class="navbot">
+        <div>
+          <p>SHOPPING BAG</p>
+          <div class="box"></div>
+        </div>
+        <div>
+          <p>SIGN IN</p>
+          <div class="box"></div>
+        </div>
+        <div>
+          <p>DELIVERY</p>
+          <div class="box"></div>
+        </div>
+        <div>
+          <p>PAYMENT</p>
+          <div class="box"></div>
+        </div>
+        <div>
+          <p>CONFIRM</p>
+          <div class="box"></div>
+        </div>
+    </div>
+     
+  </div>
+  <hr>
+
+
+<div class="mid">
+ 
+<form id="form">
+    <h3>Payment Form</h3>
+    <!--Account Information Start-->
+    <h3>Account Details</h3>
+    <div class="input_group">
+    <div class="input_box">
+        <input type="text" id="text" placeholder="Full Name" class="name"/>
+    </div>
+
+    <div class="input_box">
+        <input type="text" id="text"placeholder="Name on Card" class="name" />
+    </div>
+    </div>
+
+    <div class="input_group">
+    <div class="input_box">
+        <input type="email"id="text"placeholder="Email Address"class="name"/>
+    </div>
+    </div>
+    
+    <div class="input_group">
+    <div class="input_box">
+        <input type="text"id="text" placeholder="Address"  class="name"/>
+    </div>
+    </div>
+
+    <div class="input_group">
+    <div class="input_box">
+        <input type="text"id="text"placeholder="City"class="name"/>
+    </div>
+    </div>
+    <!--Account Information End-->
+
+
+    <!--DOB & Gender Start-->
+    <div class="input_group">
+    <div class="input_box" id="text">
+        <h3>Date Of Birth</h3>
+        <input type="text" placeholder="DD"  class="dob" />
+        <input type="text" placeholder="MM"  class="dob" />
+        <input type="text" placeholder="YYYY"  class="dob" />
+    </div>
+    <div class="input_box" id="text">
+        <h3>Gender</h3>
+        <input type="radio" name="gender" class="radio" id="b1" checked />
+        <label for="b1">Male</label>
+        <input type="radio" name="gender" class="radio" id="b2" />
+        <label for="b2">Female</label>
+    </div>
+    </div>
+    <!--DOB & Gender End-->
+
+    <!--Payment Details Start-->
+    <div class="input_group">
+    <div class="input_box">
+        <h3>Payment Details</h3>
+        <input type="radio" name="pay" class="radio" id="bc1" checked />
+        <label for="bc1"><span> <i class="fa fa-cc-visa"></i>Credit Card</span></label>
+        <input type="radio" name="pay" class="radio" id="bc2" />
+        <label for="bc2"><span>Debit Card</span></label>
+    </div>
+    </div>
+    <div class="input_group">
+    <div class="input_box">
+        <input type="text" id="card" class="name" placeholder="Enter Card Number 1111 2222 3333 4444" />
+    </div>
+    </div>
+    <div class="input_group">
+    <div class="input_box">
+        <input type="password" id="cvv"class="name"placeholder="Enter CVV"/>
+    </div>
+    </div>
+    <div class="input_group">
+    <div class="input_box">
+        
+
+        <div class="input_box">
+        <select  class="name">
+            <option value="">Card Expiry Month</option>
+            <option value="Jan">Jan</option>
+            <option value="Feb">Feb</option>
+            <option value="Mar">Mar</option>
+            <option value="Apr">Apr</option>
+            <option value="May">May</option>
+            <option value="Jun">Jun</option>
+            <option value="Jul">Jul</option>
+            <option value="Aug">Aug</option>
+            <option value="Sep">Sep</option>
+            <option value="Oct">Oct</option>
+            <option value="Nov">Nov</option>
+            <option value="Dec">Dec</option>
+        </select>
+        
+        </div>
+    </div>
+    <div class="input_box">
+        <select  class="name">
+        <option>Card Expiry Year</option>
+        <option>2022</option>
+        <option>2023</option>
+        <option>2024</option>
+        <option>2025</option>
+        <option>2026</option>
+        <option>2027</option>
+        <option>2028</option>
+        <option>2029</option>
+        <option>2030</option>
+        <option>2031</option>
+        </select>
+    </div>
+    </div>
+    <div class="input_box">
+    
+    <p id="amount"></p>
+    
+    </div>
+    <!--Payment Details End-->
+    <div class="input_group">
+    <div class="input_box">
+      
+     
+    </div>
+    </div>
+</form>
+
+</div>
+<div class="butdiv">
+  <button class="cs" onclick="pay()" type="submit">SUBMIT</button>
+      <br><br>
+ <ul><h3 id="total"></h3></ul> 
+   <a href="orderplaced.html"><button class="pn">PAY NOW</button></a>  
+      <br><br>
+    <a href="checkout.html"><button>BACK TO CHECKOUT PAGE</button></a>
+</div>
+
+
+
+<div class="bottom">  
+  <hr>
+  <p>You can also place your order via telephone.</p>
+  <div >
+      <div>
+        <h3> CALL US </h3>
+          <p>+49 89 127695-101</p> 
+        <p>Argentina: 0800-666-0663</p>  
+        <p>Chile: 800-914-515</p> 
+        <p>Colombia: 01800-518-5268</p> 
+        <p>Mexico: 01-800-099-0703</p>  
+        <p>Peru: 0800-78259</p> 
+        <p>Puerto Rico: 1-787-303-4205</p> 
+        <p>Available 24/7</p> 
+      </div>
+      <div>
+        <h3>MAIL US</h3>
+          <p>customercare@mytheresa.com</p> 
+        
+      </div>
+     
+  </div>
+
+</div>
+  <div class="botmost">
+    <hr>
+    <div>
+        <p>copyright © 2006-2022 mytheresa.com</p>
+        <p>terms of use   privacy policy  imprint</p>
+    </div>
+</div>
+
+
+
+
+</body>
+</html>
+
+<script>
+  let total=localStorage.getItem("total")|| 0;
+  document.querySelector("#total").innerText=" Total Amount -€"+total
+
+  function pay(){
+    let name=document.querySelector("#card").value;
+    let cvv=document.querySelector("#cvv").value;
+
+    if(name.length==12 && cvv.length==3){
+       alert("Card Details Succefully Submitted")
+       let b=document.querySelector(".pn").value;
+       
+    }
+    else{
+     alert("Wrong Card Deatils")
+    }
+  }
+
+</script>
